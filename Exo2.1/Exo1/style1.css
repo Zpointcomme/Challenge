@@ -1,0 +1,10 @@
+.madiv1 {
+  height: 50px;
+  border: 2px solid black;
+  background-color: red;
+  overflow: hidden;
+}
+
+.madiv1:hover {
+  overflow: visible;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/7cd5f7954a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.content').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+
+    <meta charset="utf-8">
+    <title>Fleuriste Rose Prévost</title>
+  </head>
+    <body>
+
+<header>
+  <img class="logoleft" src="img/logo2.png" alt="le logo de la fleur">
+    <nav>
+      <ul id="menu">
+        <li><a class="content home" href="#homecontent">home</a></li>
+        <li><a class="content produit" href="#productcontent">produit</a></li>
+        <li><a class="content boutique" href="#boutiquecontent">boutique</a></li>
+        <li><a class="content contact" href="#contactcontent">contact</a></li>
+      </ul>
+    </nav>
+</header>
+
+<!-- CONTENU  -->
+
+<div id="homecontent">
+    <aside class="homebox">
+    <h1>votre fleuriste prefere</h1>
+
+    <p>Le fleuriste crée des bouquets de fleurs coupées, réalise des compositions
+       florales avec de vraies fleurs ou des fleurs artificielles et fait aussi
+        des arrangements de plantes vertes. Pour cela, il commence par choisir et
+        acheter des fleurs chez un grossiste ou sur des marchés spécialisés.
+        Lorsqu'il les entrepose dans son magasin, il doit vérifier qu'elles sont
+        dans de bonnes conditions de température</p>
+
+<a href="#productcontent" target="_blank"><input type="button" value="En savoir plus..."></a>
+</aside>
+</div>
+
+<div id="productcontent">
+
+  <div class="polaroid-images">
+    <p>Les articles que nous vous proposons:</p>
+    <a href="" title="Tulipe  -  Prix: 10,00€">
+    <img height="150" src="img/flower3.jpg" alt="Flower1" title="Flower1" />
+    </a>
+    <a href="" title="Rose-  Prix: 1,00€">
+    <img height="150" src="img/flower15.jpg" alt="Flower2" title="Flower2" />
+    </a>
+    <a href="" title="Bleuet-  Prix: 1,00€">
+    <img height="150" src="img/flower21.jpg" alt="Flower3" title="Flower3" />
+    </a>
+    <a href="" title="Camomille-  Prix: 1,00€">
+    <img height="150" src="img/flower6.jpg" alt="Flower4" title="Flower4" />
+    </a>
+
+  </div>
+</div>
+
+<div id="boutiquecontent">
+ <aside class="boutiquebox">
+   <h2>notre boutique :</h2>
+   <p>Qu’on se le dise, la Toussaint n’est plus la fête
+      qu’elle était il y a quelques années. Si sa célébration
+      est boudée par les jeunes générations, et les cimetières,
+      généralement moins fréquentés que par le passé, elle reste
+     pourtant un rendez-vous incontournable pour les fleuristes.
+     Qu’on se le dise, la Toussaint n’est plus la fête
+        qu’elle était il y a quelques années. Si sa célébration
+        est boudée par les jeunes générations, et les cimetières</p>
+        <div class="rsbouton">
+
+        <a href="https://www.instagram.com/" target="_self"><i class="fa fa-camera-retro fa-4x"></i></a>
+        <a href="http://www.facebook.com/" target="_self"><i class="fa fa-facebook-square fa-4x"></i></a>
+        <a href="http://www.twitter.com/" target="_self"><i class="fa fa-twitter fa-4x"></i></a>
+        <a href="mailto:rose-prevost@fleuriste-boulogne.fr"><i class="fa fa-envelope-open-o fa-4x"></i></a>
+        </div>
+ </aside>
+</div>
+
+<div id="contactcontent">
+
+  <div class="boxcontact">
+    <p>contact:</p>
+    <form action="/ma-page-de-traitement" method="post">
+
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" />
+        </div>
+        <div>
+            <label for="courriel">Courriel</label>
+            <input type="email" id="courriel" />
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">Envoyer votre message</button>
+        </div>
+
+    </form>
+  </div>
+</div>
+</body>
+</html>

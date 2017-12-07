@@ -1,0 +1,12 @@
+table {
+  height: 100px;
+  width: 100px;
+}
+
+.noir {
+  background-color: black;
+}
+
+.blanc {
+  background-color: white;
+}

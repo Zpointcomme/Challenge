@@ -1,0 +1,246 @@
+@font-face{
+    font-family: "bearhugz";
+    src: url("font/bearhugz.ttf") format("truetype");
+}
+
+html, body{
+margin:0;
+padding:0;
+}
+
+header{
+position:fixed;
+z-index: 1000;
+min-width: 100%;
+min-height: 15%;
+background-color: rgba(236, 240, 241, 0.8);
+}
+
+.logoleft{
+max-height: 90px;
+float: left;
+}
+
+/*BARRE DE NAVIGATION*/
+
+
+nav ul{
+text-align: center;
+padding-top: 35px;
+margin: 0px;
+list-style-type: none;
+word-spacing: 100px;
+}
+
+nav li{
+display: inline-block;
+}
+
+nav a:link{
+font-family: "bearhugz",arial,sans-serif;
+font-size: 30px;
+text-decoration:none;
+}
+
+a:hover{
+color:black;
+background-color: rgba(255, 255, 255, 0.52);
+}
+
+
+ /* CONTENT HOME */
+
+
+#homecontent{
+display: flex;
+flex-direction: column;
+height: 800px;
+background-size: cover;
+background-image: url(img/flower3.jpg);
+background-attachment: fixed;
+}
+
+.homebox{
+position: relative;
+margin: 280px 0 100px 35px;
+text-align: center;
+height: 300px;
+width: 500px;
+border: 1px solid white;
+background-color: rgba(135, 16, 102, 0.35);
+/*box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);*/
+}
+
+.homebox h1{
+font-family: "bearhugz",arial,sans-serif;
+font-size: 30px;
+}
+
+
+/* Content Product */
+
+
+ #productcontent{
+display: flex;
+flex-direction: column;
+height: 750px;
+background-size: cover;
+background-image: url(img/flower20.jpg);
+ }
+
+#productcontent p{
+font-family: "bearhugz",arial,sans-serif;
+font-size: 40px;
+}
+
+
+/********** Polaroid debut *********/
+
+
+.polaroid-images{
+margin-top: auto; margin-bottom: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+.polaroid-images p{
+text-align: center;
+font-size: 30px;
+}
+
+.polaroid-images a{
+background: white;
+display: inline;
+float: left;
+margin: 0 15px 30px;
+padding: 10px 10px 25px;
+text-align: center;
+text-decoration: none;
+-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+box-shadow: 0 4px 6px rgba(0,0,0,.3);
+-webkit-transition: all .15s linear;
+-moz-transition: all .15s linear;
+transition: all .15s linear;
+z-index:0;
+}
+
+.polaroid-images a:after{
+color: #333;
+content: attr(title);
+position: relative;
+top:15px;
+}
+
+.polaroid-images img{
+display: block;
+width: inherit;
+}
+
+
+/* Content boutique */
+
+
+#boutiquecontent{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  background-size: cover;
+  background-image: url(img/flower14.jpg);
+}
+
+.boutiquebox h2{
+  font-family: "bearhugz",arial,sans-serif;
+  font-size: 30px;
+}
+.boutiquebox{
+  margin-left: 650px;
+  margin-top: 300px;
+  height: 320px;
+  width: 600px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.73);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.rsbouton{
+  text-decoration: none;
+}
+.rsbouton i{
+  color: black;
+  width:70px;
+  height: 70px;
+  margin: 10px;
+}
+
+/* Content contact */
+
+
+#contactcontent{
+  display: flex;
+  flex-direction: column;
+  height: 750px;
+  background-size: cover;
+  background-image: url(img/flower17.jpg);
+}
+
+.boxcontact{
+  margin-top: 130px;
+  /*margin-top: auto; margin-bottom: auto;*/
+}
+
+.boxcontact p{
+  font-family: "bearhugz",arial,sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+/* Formulaire contact */
+
+
+form {
+    background-color: rgba(221, 70, 50, 0.86);
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+
+    .button {
+        /* Pour positionner les boutons de la même manière que les champs textuels */
+        padding-left: 90px; /* même dimension que les étiquettes */
+
+    }
+
+    button {
+        /* Cette marge représente approximativement le même espace
+           que celui entre les étiquettes et les champs textuels */
+        margin-left: .5em;
+    }
